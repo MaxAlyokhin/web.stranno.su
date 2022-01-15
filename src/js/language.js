@@ -6,8 +6,8 @@ export default function language() {
 
   const langMarkerFromURL = document.location.search.slice(1)
 
-  if (localStorage.language) {
-    isRussian = localStorage.language
+  if (localStorage.language !== undefined) {
+    isRussian = localStorage.language === 'true' ? true : false
   } else if (langMarkerFromURL === 'ru') {
     isRussian = true
     localStorage.language = isRussian

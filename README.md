@@ -1,1 +1,1 @@
-https://web.asebeia.su
+https://web.stranno.su
